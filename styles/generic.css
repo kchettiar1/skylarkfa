@@ -1,15 +1,12 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-size: 1.6rem;
   margin: 0;
-  min-height: 100vh;
 }
 
 *,

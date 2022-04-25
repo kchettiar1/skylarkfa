@@ -3,85 +3,12 @@
 body {
   font-family: 'Noto Serif Display', serif;
   font-family: 'Noto Sans Display', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(235, 13%, 20%);
 }
 
-/* Nav */
-.nav {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 1rem;
-}
-
-.nav .brand {
-  font-family: 'Noto Serif Display', serif;
-}
-
-.nav-menu ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-menu ul li {
-  padding: 0.5rem 1rem;
-}
-
-@media screen and (max-width: 320px) {
-  .nav h1 {
-    font-size: 2rem;
-    width: auto;
-  }
-  .nav-menu ul li {
-    font-size: 1.2rem;
-  }
-
-  .hero-body-text {
-    font-size: 1rem;
-  }
-}
-
-/* Sections */
-
-/* Hero-block */
-.hero-block {
-  padding: 14rem 0 0;
-  max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-header {
-  font-family: 'Noto Serif Display', serif;
-  font-weight: 400;
-  font-size: 7.2rem;
-  background-color: hsla(0, 0%, 100%, 0.15);
-  text-shadow: white 0.5px 0.5px 2px;
-  width: 800px;
-  margin: 0 auto;
-}
-
-.hero-text {
-  font-size: 4.8rem;
-}
-
-.hero-body-text {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 375px) {
-  .hero-block {
-    padding: 4rem 0 0;
-    max-width: 320px;
-  }
-  .hero-header {
-    font-size: 3.6rem;
-    width: auto;
-  }
-  .hero-text {
-    font-size: 1.6rem;
-  }
-
-  .hero-body-text {
-    font-size: 1rem;
-  }
 }
