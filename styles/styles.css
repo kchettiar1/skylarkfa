@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;400;700&family=Noto+Serif+Display:wght@300;400;700&display=swap');
 
 body {
-  /* font-family: 'Noto Serif Display', serif; */
   font-family: 'Noto Sans Display', sans-serif;
   background-color: hsl(0, 0%, 100%);
   color: hsl(236, 14%, 20%);
 }
+h1 {
+  padding-block-end: 1rem;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p {
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+}
 
 /* Utilities */
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -18,24 +33,34 @@ body {
 
 /* Header - Contact Banner */
 .contact-banner {
-  background-color: hsl(240, 5%, 78%);
+  background-color: hsl(171, 100%, 10%);
+  color: hsl(0, 0%, 100%);
   flex-direction: column;
-  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  padding-block-end: 0.5rem;
 }
 
-.social-links i:nth-child(1) {
-  padding-inline-end: 1rem;
+.contact-banner p {
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
 }
+
 
 .social-links i {
-  padding: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* Responsive 320px */
+@media screen and (max-width: 320px) {
+  .contact-banner p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Header - Navbar */
 .navbar {
   padding: 1rem 1rem;
   justify-content: space-between;
-  border-bottom: 1px solid black;
 }
 
 .brand a {
@@ -45,10 +70,15 @@ body {
   font-size: 1.5rem;
   font-family: 'Noto Serif Display', serif;
 }
+.nav-icon {
+  padding: 1rem;
+}
 
 .nav-menu {
   display: none;
 }
+
+
 
 /* Responsive 768px */
 @media screen and (min-width: 768px) {
@@ -65,5 +95,57 @@ body {
     padding-inline-end: 0;
   }
 }
-
 /* Header Ends Here */
+
+/* Hero Section Starts Here */
+.hero-wrapper {
+  flex-direction: column;
+}
+
+.hero-img .desktop {
+  display: none;
+}
+.hero-img {
+  width: 100%;
+
+  background: #9a9e9c;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.hero-img img {
+  mix-blend-mode: multiply;
+  -webkit-filter: opacity(0.8);
+  filter: opacity(0.8);
+}
+/* Responsive 768px */
+
+@media screen and (min-width: 768px) {
+  .hero-img .mobile {
+    display: none;
+  }
+  .hero-img .desktop {
+    display: initial;
+  }
+}
+
+/* Hero Section Ends Here */
+
+/* About Sections Starts Here */
+.about-wrapper {
+  padding: 1.25rem;
+}
+
+/* Services Section Starts Here*/
+.services-wrapper {
+  background-color: hsl(168, 100%, 25%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.25rem;
+}
+
+.logo {
+  /* height: 200px; */
+  width: 40px;
+  margin-inline-start: 0px;
+}
