@@ -47,7 +47,7 @@ img {
   /* minor vertical centering. Works for images IF there is a baseline (i.e. they are displayed inline or inline-block) */
 }
 
-/* Because we us <ul>s for lists that we don't always want bulletted. */
+/* Because we use <ul>s for lists that we don't always want bulletted. */
 ul {
   list-style: none;
   padding-left: 0;
