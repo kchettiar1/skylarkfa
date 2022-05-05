@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;400;700&family=Noto+Serif+Display:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 body {
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: hsl(0, 0%, 100%);
   color: hsl(236, 14%, 20%);
 }
 h1 {
-  padding-block-end: 1rem;
   font-size: 1.875rem;
   font-weight: 400;
+  font-family: 'Merriweather', serif;
 }
 
 h2,
@@ -33,21 +33,15 @@ p {
 
 /* Header - Contact Banner */
 .contact-banner {
-  background-color: hsl(171, 100%, 10%);
+  background-color: hsla(168, 100%, 25%, 1);
   color: hsl(0, 0%, 100%);
-  flex-direction: column;
   text-align: center;
-  padding-block-end: 0.5rem;
-}
-
-.contact-banner p {
-  padding-block-start: 0.5rem;
-  padding-block-end: 0.5rem;
-}
-
-
-.social-links i {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 /* Responsive 320px */
@@ -59,7 +53,7 @@ p {
 
 /* Header - Navbar */
 .navbar {
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   justify-content: space-between;
 }
 
@@ -72,13 +66,13 @@ p {
 }
 .nav-icon {
   padding: 1rem;
+  font-size: 1.5rem;
+  color: #007e65;
 }
 
 .nav-menu {
   display: none;
 }
-
-
 
 /* Responsive 768px */
 @media screen and (min-width: 768px) {
@@ -98,17 +92,27 @@ p {
 /* Header Ends Here */
 
 /* Hero Section Starts Here */
-.hero-wrapper {
-  flex-direction: column;
+
+.hero-main {
+  height: auto;
+  position: relative;
 }
 
-.hero-img .desktop {
-  display: none;
+.hero-main-txt {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  color: #000;
+  text-shadow: 2px 2px 2px rgb(254, 254, 254);
+}
+
+.hero-main-txt h1 {
+  font-size: 2.75rem;
+  letter-spacing: 0.25rem;
 }
 .hero-img {
-  width: 100%;
-
-  background: #9a9e9c;
+  height: 50%;
+  background: hsla(150, 2%, 61%, 0.5);
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
@@ -146,6 +150,10 @@ p {
 
 .logo {
   /* height: 200px; */
-  width: 40px;
-  margin-inline-start: 0px;
+  width: 50px;
+}
+
+/* footer */
+.social-links i {
+  padding: 0.5rem;
 }
