@@ -48,10 +48,15 @@ p {
 /* Hero Section Starts Here */
 .hero-main-txt {
   flex-direction: column;
+  color: hsl(191, 65%, 14%);
 }
 
 .hero-main-txt {
   padding: 1rem;
 }
-/* Hero Section Ends Here */
 
+.logo {
+  margin: 1.5rem;
+  width: 500px;
+}
+/* Hero Section Ends Here */
