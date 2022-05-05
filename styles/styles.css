@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: hsl(0, 0%, 100%);
   color: hsl(236, 14%, 20%);
+  text-align: center;
 }
 h1 {
   font-size: 1.875rem;
@@ -93,9 +94,8 @@ p {
 
 /* Hero Section Starts Here */
 
-.hero-main {
-  height: auto;
-  position: relative;
+.hero-main-txt {
+  flex-direction: column;
 }
 
 .hero-main-txt {
